@@ -6,8 +6,8 @@ export default class InMemoryCache<T>{
     /**
      * 
      * @param key key (string)
-     * @param value Value
-     * @param ttl Time to live in seconds
+     * @param value Value (T)
+     * @param ttl Time to live in seconds (number)
      */
     set(key: string, value: T, ttl?: number): void {
         this.items.set(key, { value, expiry: !!ttl ? Date.now() + (ttl * 1000) : undefined })
