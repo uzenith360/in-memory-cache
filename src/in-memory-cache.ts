@@ -10,7 +10,7 @@ export default class InMemoryCache<T>{
      * @param ttl Time to live in seconds (number)
      */
     set(key: string, value: T, ttl?: number): void {
-        this.items.set(key, { value, expiry: !!ttl ? Date.now() + (ttl * 1000) : undefined })
+        this.items.set(key, { value, expiry: !!ttl ? Date.now() + (ttl * 1000) : undefined });
     }
 
     get(key: string): T | undefined {
