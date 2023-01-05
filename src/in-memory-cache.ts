@@ -18,7 +18,7 @@ export default class InMemoryCache<T>{
     }
 
     has(key: string): boolean {
-        return !!this.getKey(key)
+        return !!this.getKey(key);
         // return this.items.has(key);
     }
 
