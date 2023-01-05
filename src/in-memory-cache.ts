@@ -1,6 +1,6 @@
 import InMemoryCacheItem from "./in-memory-cache-item.interface";
 
-export default class InMemoryCache<T>{
+export default class InMemoryCache<T> {
     private items: Map<string, InMemoryCacheItem<T>> = new Map();
 
     /**
