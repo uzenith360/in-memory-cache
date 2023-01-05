@@ -57,7 +57,7 @@ describe('InMemoryCache Class', () => {
 
         inMemoryCache!.set('value', { key: 'data', value: 10 }, 2);
 
-        setTimeout(
+        global.setTimeout(
             () => {
                 assert.equal(inMemoryCache!.get('value'), undefined);
 
