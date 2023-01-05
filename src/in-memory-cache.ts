@@ -4,7 +4,6 @@ export default class InMemoryCache<T> {
     private items: Map<string, InMemoryCacheItem<T>> = new Map();
 
     /**
-     * 
      * @param key key (string)
      * @param value Value (T)
      * @param ttl Time to live in seconds (number)
