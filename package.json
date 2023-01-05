@@ -1,7 +1,7 @@
 {
   "name": "@uzenith360/in-memory-cache",
-  "version": "0.0.0-development",
-  "description": "Typescript utilities commonly used in apps",
+  "version": "0.0.0",
+  "description": "A simple in-memory cache implementation",
   "scripts": {
     "clean": "rm -rf ./lib",
     "build": "npm run clean && npm run build:esm && npm run build:cjs",
@@ -17,7 +17,7 @@
   },
   "keywords": [
     "typescript",
-    "utilities"
+    "in-memory cache"
   ],
   "author": "@uzenith360",
   "license": "ISC",
